@@ -51,7 +51,7 @@ E.g:
     Lets say one of the data point is plotted on the red region. Therefore, the model will classify the data point as region red.
 
 1. KNN (K-nearest neighbours)
-It is classify and also a regression algorithm
+Can be used for classification and also regression algorithm
 k acts as a constant
 For example, when a point is plotted on a graph, the model calculates the disatnce of k-amount of points nearest to the point.
 Then, the majority will decide which region the point belongs to
@@ -64,7 +64,35 @@ Then, the closest majority to the point is region blue. Thus, the point is class
 
 
 2. SVM (Support Vector Machine)
+Can be used for classification and also regression algorithm
+Effective for high dimensional spaces (Contains many features)
+Many kernel functions
 
+SVM creates a hyperplane (Hyperplane would be a single line in a 2dimension graph and 2dimensional line in a 3dimension graph etc.)
+- SVM draws the plane by computing the distance from the support vectors
+- The way SVM optimize the model is by creating the largest possible margin (THe higher the margin, the higher the accuracy)
+Plane can be linear or sigmoid function (Thus, increasing fault tolerance)
+
+|
+|    . .  .   . /    ...
+|        .. \  /    ..                                 . = data points/ support vectors
+|   ... .    \/   .  .                                 / = hyperplane
+|  ..  .     /\    .                                   \ = margin
+| .         /  \ .. . 
+|   .. .   /   . 
+|         /    .. ...
+|________________________________
+
+Kernel functions
+SVM couldn't seperate the datapoints with plane since they are all clustered together. Therefore, it uses kernel function to seperate it
+
+|                                                 |
+|   **********                                    |
+|  *   ... .   *              converts            |
+| *       .  .  *           ------------>         |     . .. .. . .. 
+|  *.... .. .  *                                  |   ***************
+|    **********                                   |
+|____________________                             |_____________________
 
 
 =============================================================
