@@ -109,7 +109,7 @@ R^2 value indicates how accurate the line represents the datapoints
 
 | 
 |    . . /.. 
-|    .. /. .
+|    .. /. .                                     . = datapoints
 |    . /..
 |   . /..
 |____________________
@@ -155,6 +155,67 @@ y = midpoint ,   x = midpoint  ,    m = normal
 n = (x2- x1, y2, y1, z2, z1)
 P = ((x1 + x2)/ 2, (y1 + y2)/ 2, (z1 + z2)/ 2)
 (x2 - x1)(x - xp) + (y2 - y1)(y - yp) + (z2 - z1)(z - zp) = 0
+
+
+
+===============================================================
+| Neural Network                                              |
+===============================================================
+Refer neural network map image here: https://www.ibm.com/my-en/cloud/learn/neural-networks
+
+Neural netowrk is used to find pattern. It reflects the behavior of the human brain, allowing computer to recognize pattern
+- Artificial neural netowrks are compromised of a node layers, containing an input layer, one or more hidden layers, and an output layer. 
+- Each node are connected to another and has an associated weight and threshold value. 
+- That node is activated, sending data to the next layer of the network. 
+ 
+Linear combination fomula (The way calculating output)
+ Σ (xi*wi)+bi 
+i=1
+
+Activation function:
+    f(x) = y1
+When we are training the program, we are inputting alot of data.
+The program will adjust its weight in order to optimize the output
+
+Hidden layer:
+Allow neural network to figure out more patterns (Adds more complexity into neural network)
+
+
+
+=================================================================
+| Overfitting vs Underfitting                                   |
+=================================================================
+1) Overfitting 
+Overfitting refers to a model that models the training data too well
+- It happens when a model learns the detail and noise in the training data to the extent that it negatively impacts the performance of the model on new data
+- This means that the noise or random fluctuations in the training data is picked up and learned as concepts by the model 
+- The problem is that these concepts do not apply to new data and negatively impact the models ability to generalize.
+
+Example:
+    Say you are visiting a foreign country and the taxi driver rips you off. You might be
+    tempted to say that all taxi drivers in that country are thieves. Overgeneralizing is
+    something that we humans do all too often,
+
+Can be fixed by:
+    • To simplify the model by selecting one with fewer parameters
+    (e.g., a linear model rather than a high-degree polynomial
+    model), by reducing the number of attributes in the training
+    data or by constraining the model
+    • To gather more training data
+    • To reduce the noise in the training data (e.g., fix data errors
+    and remove outliers)
+
+
+2) Underfitting 
+Underfitting refers to a model that can neither model the training data nor generalize to new data
+
+
+
+
+
+
+
+
 
 
 
