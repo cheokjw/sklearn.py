@@ -99,5 +99,63 @@ SVM couldn't seperate the datapoints with plane since they are all clustered tog
 | Linear Regression vs Logistic Regression                  |
 =============================================================
 1. Linear Regression
+Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. 
+Regression models a target prediction value based on features(intdependant variable)
+It is mostly used for finding out the relationship between variables and forecasting
+Y = mx + c 
+
+R^2 value indicates how accurate the line represents the datapoints 
+(higher R^2, higher accuracy)
+
+| 
+|    . . /.. 
+|    .. /. .
+|    . /..
+|   . /..
+|____________________
 
 2. Logistic Regression
+Converts y to logit(y) (sigmoid function)
+logit(y) = 1/ (1 + e^y) [never touches 0 and 1]
+
+|                 
+|                    . . . .. .
+|                  _____________
+|              .. /... . .. . .
+|                /
+|               /
+|              /
+|             /
+| . . .. ..  /
+|___________/
+| .. .. . .. 
+|_________________________________
+
+
+============================================================
+| K-means                                                  |
+============================================================
+Clustering  
+Clustering is an algorithm where the computer figures out that any point in a classified region is belong to the region
+
+The difference between Clustering and classification is that classification on model trains with labels while clustering models don't
+
+Centroids (n number of datapoints, n depends on number of label)
+Given example where there are 2 features for a dataset.
+The algorithm starts by creating 2 centroids. A hyperplane will then be generated between these two centroids,
+Then it calculates the average position and changing the position of the plane based on the result
+This repeats until a hyperplane that suits the label seperation is found
+
+2D -> 2 features
+y = mx + c
+y = midpoint ,   x = midpoint  ,    m = normal
+
+
+3D -> 3 features 
+n = (x2- x1, y2, y1, z2, z1)
+P = ((x1 + x2)/ 2, (y1 + y2)/ 2, (z1 + z2)/ 2)
+(x2 - x1)(x - xp) + (y2 - y1)(y - yp) + (z2 - z1)(z - zp) = 0
+
+
+
+
