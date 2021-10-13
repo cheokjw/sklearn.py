@@ -210,13 +210,46 @@ Can be fixed by:
 Underfitting refers to a model that can neither model the training data nor generalize to new data
 
 
+==================================================================
+| Loss Function & Gradient Descents                              |
+==================================================================
+1) Loss Function/ Cost function 
+Objective function is used to evaluate a candidate solution(e.g: a set of weights)
+We may seek to maximuze or minimize the objective function, meaning that we are searching for a candidate solution that has the highest or lowest score respectively.
+Goal: Typically, with neural networks, we seek to minimize the error.
+
+       n     
+1/n *  Σ(y - ȳ)^2
+       i
+
+It tells how bad the output the neural network produced that allows it to adjust its weights and biases in order to produce the correct output
+
+2) Gradient Descent
+Gradient Descent is the way that neural network used to minimize the cost function 
+To do so, we took the gradient of the cost function and they will give us a vector of the weights (w1, w2, w3 .... etc)
+Taking the negative of the gradient vector would give us the direction or how much we should change these weight in order to minimize the cost
 
 
+=====================================================================
+| Backpropogation                                                   |
+=====================================================================
+Backpropogation is the algorithm that is used on one training sets in order to calculate these weights (or the change we want to apply to a certain weights)
+input         output
+o   
+o    -> o 
+o    -> o    -> o 
+o    -> o 
+o 
+(neural network map)
+-----------------> = forward propogation
+<----------------- = backward propogation
+
+Backward propogation is basically taking the information from the output layer and going backwards, taking the error and calculating backwards to get to the error on certain weights
+The errors are composition function of all of the activation function of hidden layers before it
+E.g:-
+dE/dw = dE/da * da/dZ * dZ/dw
 
 
-
-
-
-
-
-
+========================================================================
+| CNN (Convolutionl Neural Network)                                    |
+======================================================================== 
