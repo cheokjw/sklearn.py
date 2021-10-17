@@ -248,8 +248,3 @@ Backward propogation is basically taking the information from the output layer a
 The errors are composition function of all of the activation function of hidden layers before it
 E.g:-
 dE/dw = dE/da * da/dZ * dZ/dw
-
-
-========================================================================
-| CNN (Convolutionl Neural Network)                                    |
-======================================================================== 
