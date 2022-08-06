@@ -43,7 +43,7 @@ clf.joblib.load(filename)
 
 
 ============================================================
-| Classification                                           |
+| Classification   (Supervised Learning)                   |
 ============================================================
 Classfication is a process of categorizing a gicen set of data into classes (Grouping data)
 E.g:
@@ -133,9 +133,8 @@ logit(y) = 1/ (1 + e^y) [never touches 0 and 1]
 
 
 ============================================================
-| K-means                                                  |
+| Clustering (Unsupervised Learning)                       |
 ============================================================
-Clustering  
 Clustering is an algorithm where the computer figures out that any point in a classified region is belong to the region
 
 The difference between Clustering and classification is that classification on model trains with labels while clustering models don't
