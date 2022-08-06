@@ -140,7 +140,9 @@ Clustering is an algorithm where the computer figures out that any point in a cl
 
 The difference between Clustering and classification is that classification on model trains with labels while clustering models don't
 
-Centroids (n number of datapoints, n depends on number of label)
+1. K-mean clustering
+- It groups similar datapoints together and discover underlying patterns. You'll define a number k, which refers to the number of centroids
+Centroids (n number of datapoints, n depends on number of label) = Centroid is an imaginary data point representing the center of the cluster)
 Given example where there are 2 features for a dataset.
 The algorithm starts by creating 2 centroids. A hyperplane will then be generated between these two centroids,
 Then it calculates the average position and changing the position of the plane based on the result
